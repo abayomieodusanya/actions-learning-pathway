@@ -3,7 +3,7 @@ name: halo-world
 on: push
 
 jobs: 
-  hello-world-job:
+  halo-world-job:
 
     runs-on: ubuntu-latest
 
