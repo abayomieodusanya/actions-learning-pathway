@@ -1,11 +1,12 @@
-name: mybuild-mytest-mydeploy
+name: hello-world
 on: push
 jobs: 
-  build:
+  hello-world-job:
     runs-on: ubuntu-latest
     steps: 
-      - name: checkout repo
+      - name: Check out repository code
         uses: actions/checkout@v3
+      - run: echo "$(cat halo_world.txt)"
       - name: use node.js
         uses: actions/setup-node@v3
         with:
